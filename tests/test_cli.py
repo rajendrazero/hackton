@@ -28,3 +28,5 @@ def test_doctor_reports_runtime_and_dependencies() -> None:
     assert "Python" in result.stdout
     assert "typer" in result.stdout
     assert "rich" in result.stdout
+    assert "pydantic" in result.stdout
+    assert "PyYAML" in result.stdout

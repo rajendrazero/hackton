@@ -24,7 +24,7 @@ def check_environment() -> tuple[DoctorCheck, ...]:
         )
     ]
 
-    for package in ("typer", "rich"):
+    for package in ("typer", "rich", "pydantic", "PyYAML"):
         try:
             installed_version = version(package)
         except PackageNotFoundError:
