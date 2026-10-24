@@ -1,0 +1,12 @@
+{
+  "metrics": {
+    "http_req_duration": {
+      "values": {"med": 34.5, "p(90)": 55, "p(95)": 72, "p(99)": 99}
+    },
+    "http_reqs": {"values": {"count": 10, "rate": 2.5}},
+    "http_req_failed": {"values": {"rate": 0.1}},
+    "sentinel_http_status{status:200}": {"values": {"count": 9}},
+    "sentinel_http_status{status:429}": {"values": {"count": 1}},
+    "sentinel_request_timeouts": {"values": {"count": 0}}
+  }
+}
