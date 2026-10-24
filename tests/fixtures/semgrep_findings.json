@@ -1,0 +1,25 @@
+{
+  "version": "1.100.0",
+  "results": [
+    {
+      "check_id": "python.lang.security.audit.subprocess-shell-true",
+      "path": "src/example.py",
+      "start": {"line": 12},
+      "extra": {
+        "severity": "WARNING",
+        "message": "Review this subprocess call.",
+        "lines": "subprocess.run(command, shell=True)"
+      }
+    },
+    {
+      "check_id": "test.secret",
+      "path": "src/credentials.py",
+      "start": {"line": 3},
+      "extra": {
+        "severity": "ERROR",
+        "message": "password: hidden@example.test",
+        "lines": "password = 'do-not-leak'"
+      }
+    }
+  ]
+}

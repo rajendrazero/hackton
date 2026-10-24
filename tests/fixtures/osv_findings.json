@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "source": {"path": "requirements.txt", "type": "lockfile"},
+      "packages": [
+        {
+          "package": {"name": "demo", "version": "1.0.0", "ecosystem": "PyPI"},
+          "vulnerabilities": [
+            {
+              "id": "GHSA-abcd-1234-efgh",
+              "aliases": ["CVE-2026-12345"],
+              "database_specific": {"severity": "HIGH"}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
